@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<link rel="stylesheet" href="cssfile.css">
+
+</head>
+
+<title> UConn Buy & Sell   </title>
+
+<body>
+
+<h1> UConn Buy & Sell </h1>
+
+<!-- Menu goes here -->
+<div class="menu" >
+<a class="active href ="#home"> HOME </a>
+<!-- <a href="sellbooks.html"> SELL BOOKS </a> -->
+</div>
+<br>
+
+
+
+<!-- Displaying stuff as a table, just testing, can delete later -->
+<p>
+<table id="bookinfotable" >
+<!-- Adding headers -->
+<tr>
+	<th> Book Information </th>
+	<ul id="booklist">
+	</ul>
+	
+	<th> Picture </th>
+	<th> Price </th>
+	<th> Contact Info </th>
+</tr>
+
+</table>
+</p>
+
+<!-- Getting input from the user using html form -->
+<div class="submitform">
+<h2> Add your books here </h2>
+<form id="inputform">
+
+<p>
+<label>Book Name </label>
+<input type="text" name="bookname" id="bookname">
+</p>
+
+<p>
+<label>ISBN # (optional) </label> 
+<input type="text" name="isbn" id="isbn">
+</p>
+
+<p>
+<label>Edition </label>
+<input type="text" name="edition" id="edition">
+</p>
+
+<p>
+<label>Author </label>
+<input type="text" name="author" id="author">
+</p>
+
+<p>
+<label>Price</label>
+<input type="text" name="price" id="price">
+</p>
+
+<p>
+<label>Add pictures</label>
+<input type="file" name="picture" id="picture" 
+</p>
+<p>
+<label>Contact Info</label>
+<input type="email" name="contactinfo" id="contactinfo">
+</p>
+
+
+<!-- Creating a save button -->
+<p class="save">
+<button type="submit" >SUBMIT</button>
+</p>
+
+</div>
+
+
+<!-- Firebase stuff -->
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script type="text/javascript" src="main.js"> </script>
+
+
+</body>
+</html>
